@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishka</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="offset off"></div>
+<header class="main-header">
+    <div class="wrapper navigation__wrapper">
+        <nav class="main-navigation">
+            <div class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item main-menu__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+                    <li class="main-menu__item main-menu__item--knitting"><a href="order.html">Вязание на заказ</a></li>
+                </ul>
+            </div>
+            <div class="logo"><a href="index.html">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/mishka-logo-mobile.svg">
+                    <source media="(max-width: 1150px)" srcset="img/mishka-logo-tablet.svg">
+                    <img src="img/mishka-logo-desktop.svg" alt="Логотип Мишка" width="150px" height="72"
+                         class="logo__svg">
+                </picture>
+            </a>
+                <div class="menu__closer">
+                    <img src="img/icon-menu-open.svg" class="strips">
+                    <img src="img/icon-menu-close.svg" class="cross">
+                </div>
+            </div>
+            <div class="user-menu">
+                <ul class="user-menu__list">
+                    <li class="user-menu__item user-menu__item--search">
+                        <a href="">
+                            <svg width="22" height="19" class="user-menu__svg--search">
+                                <use xlink:href="img/sprite.svg#icon-search"></use>
+                            </svg>
+                            <span class="user-menu__search-txt">Поиск по сайту</span></a></li>
+                    <li class="user-menu__item user-menu__item--cart"><a href="#">
+                        <svg width="22" height="19" class="user-menu__svg--cart">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        Корзина: пока пуста</a></li>
+                </ul>
+            </div>
+            <div class="submenu">
+                <ul class="submenu__list">
+                    <li class="submenu__item submenu__item--receipts">
+                        <a href="#" class="submenu__link">Новые поступления</a>
+                    </li>
+                    <li class="submenu__item submenu__item--sale">
+                        <a href="#" class="submenu__link">Распродажа</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="delivery-block">
+                <p class="delivery-txt">Бесплатная доставка по России</p>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="catalog">
+    <div class="wrapper">
+        <h1 class="section-title title-catalog">Каталог товаров</h1>
+    </div>
+</main>
+<section class="catalog__columns">
+    <div class="wrapper catalog__wrapper">
+        <ul class="catalog__list">
+            <li class="catalog__item">
+                <div class="cat-item__img-wrapper">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="img/rabbit-tablet@1x.jpg 1x, img/rabbit-tablet@2x.jpg 2x">
+                        <source media="(min-width: 1150px)"
+                                srcset="img/rabbit-desktop@1x.jpg 1x, img/rabbit-desktop@2x.jpg 2x">
+                        <img src="img/rabbit-mobile@1x.jpg"
+                             srcset="img/rabbit-mobile@1x.jpg 1x, img/rabbit-mobile@2x.jpg 2x" alt="Спецпредложение"
+                             width="" height="">
+                    </picture>
+                </div>
+                <div class="cat-item__description">
+                    <div class="cat-item__description-wrapper">
+                        <div class="cat-item__title">Зайчик-попрыгайчик</div>
+                        <div class="cat-item__features">Рост 30см, вес 200гр</div>
+                    </div>
+                    <div class="cat-item__price"><span>1200 руб.</span>
+                        <svg width="22" height="19" class="cat-item__svg">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li class="catalog__item">
+                <div class="cat-item__img-wrapper">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="img/basket-tablet@1x.jpg 1x,img/basket-tablet@2x.jpg 2x">
+                        <source media="(min-width: 1150px)"
+                                srcset="img/basket-desktop@1x.jpg 1x, img/basket-desktop@2x.jpg 2x">
+                        <img src="img/basket-mobile@1x.jpg"
+                             srcset="img/basket-mobile@1x.jpg 1x, img/basket-mobile@2x.jpg 2x" alt="Спецпредложение"
+                             width="" height="">
+                    </picture>
+
+                </div>
+                <div class="cat-item__description">
+                    <div class="cat-item__description-wrapper">
+                        <div class="cat-item__title">Корзинка для белья</div>
+                        <div class="cat-item__features">Диаметр 15 см, высота 10 см</div>
+                    </div>
+                    <div class="cat-item__price"><span>690 руб.</span>
+                        <svg width="22" height="19" class="cat-item__svg">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li class="catalog__item">
+                <div class="cat-item__img-wrapper">
+                    <picture>
+                        <source media="(min-width: 768px)"
+                                srcset="img/animals-tablet@1x.jpg 1x, img/animals-tablet@2x.jpg 2x">
+                        <source media="(min-width: 1150px)"
+                                srcset="img/animals-desktop@1x.jpg 1x, img/animals-desktop@2x.jpg 2x">
+                        <img src="img/animals-mobile@1x.jpg"
+                             srcset="img/animals-mobile@1x.jpg 1x, img/animals-mobile@2x.jpg 2x" alt="Спецпредложение"
+                             width="" height="">
+                    </picture>
+
+                </div>
+                <div class="cat-item__description">
+                    <div class="cat-item__description-wrapper">
+                        <div class="cat-item__title">Большая корзинка для игрушек</div>
+                        <div class="cat-item__features">Диаметр 30 см, рост 30 см</div>
+                    </div>
+                    <div class="cat-item__price"><span>1500 руб.</span>
+                        <svg width="22" height="19" class="cat-item__svg">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="catalog__video">
+    <div class="wrapper catalog__wrapper">
+        <div class="cat-video">
+            <div class="cat-video__video">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                    <source media="(min-width: 1150px)"
+                            srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                    <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x"
+                         alt="Спецпредложение" width="" height="">
+                </picture>
+                <svg width="35" height="25" class="cat-item___svg">
+                    <use xlink:href="img/sprite.svg#icon-play"></use>
+                </svg>
+            </div>
+            <div class="cat-video__info">
+                <div class="cat-video__title-wrapper">
+                    <h1 class="cat-video__title">Процесс производства</h1>
+                    <svg class="cat-video__svg">
+                        <use xlink:href="img/sprite.svg#icon-video"></use>
+                    </svg>
+                </div>
+                <div class="cat-video__description">
+                    По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши
+                    товары.
+                </div>
+                <a href="#" class="cat-video__button button">Сделать заказ</a></div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="wrapper footer__wrapper">
+        <div class="inner-wrapper inner-footer">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <svg width="100" height="40" class="footer__logo--svg">
+                        <use xlink:href="img/sprite.svg#logo-footer"></use>
+                    </svg>
+                </a>
+
+            </div>
+            <div class="social">
+                <div class="social__item insta">
+                    <a href="#">
+                        <svg width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social__item fb">
+                    <a href="#">
+                        <svg width="16" height="29">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social__item twit">
+                    <a href="#">
+                        <svg width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="developer">
+                <a class="developer" href="#"><p class="developer__txt">Разработчик</p>
+                    <svg width="30" height="35">
+                        <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

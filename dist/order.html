@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishka</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="offset off"></div>
+<header class="main-header">
+    <div class="wrapper navigation__wrapper">
+        <nav class="main-navigation">
+            <div class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item main-menu__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+                    <li class="main-menu__item main-menu__item--knitting"><a href="order.html">Вязание на заказ</a></li>
+                </ul>
+            </div>
+            <div class="logo"><a href="index.html">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="img/mishka-logo-mobile.svg">
+                    <source media="(max-width: 1150px)" srcset="img/mishka-logo-tablet.svg">
+                    <img src="img/mishka-logo-desktop.svg" alt="Логотип Мишка" width="150px" height="72"
+                         class="logo__svg">
+                </picture>
+            </a>
+                <div class="menu__closer">
+                    <img src="img/icon-menu-open.svg" class="strips">
+                    <img src="img/icon-menu-close.svg" class="cross">
+                </div>
+            </div>
+            <div class="user-menu">
+                <ul class="user-menu__list">
+                    <li class="user-menu__item user-menu__item--search">
+                        <a href="">
+                            <svg width="22" height="19" class="user-menu__svg--search">
+                                <use xlink:href="img/sprite.svg#icon-search"></use>
+                            </svg>
+                            <span class="user-menu__search-txt">Поиск по сайту</span></a></li>
+                    <li class="user-menu__item user-menu__item--cart"><a href="#">
+                        <svg width="22" height="19" class="user-menu__svg--cart">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        Корзина: пока пуста</a></li>
+                </ul>
+            </div>
+            <div class="submenu">
+                <ul class="submenu__list">
+                    <li class="submenu__item submenu__item--receipts">
+                        <a href="#" class="submenu__link">Новые поступления</a>
+                    </li>
+                    <li class="submenu__item submenu__item--sale">
+                        <a href="#" class="submenu__link">Распродажа</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="delivery-block">
+                <p class="delivery-txt">Бесплатная доставка по России</p>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="catalog">
+    <div class="wrapper">
+        <h1 class="section-title title-catalog">Вязание на заказ</h1>
+    </div>
+</main>
+<section class="form">
+    <div class="wrapper form__wrapper form__txt--align">
+        <p class="form__txt">Мы будем рады воплотить в жизнь ваши пожелания!
+            Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
+    </div>
+    <form action="#">
+        <fieldset class="field__type">
+            <div class="form__type form__wrapper">
+                <legend class="form__title">Тип</legend>
+                <div class="form__label-wrapper ">
+                    <label for="type" class="input__type">
+                        <input type='radio' id="type" name="type" checked class="radio">
+                        <span class="radio-custom"></span>
+                        <span class="input__type-txt input__type-txt--interior">Аксессуар для интерьера</span>
+                    </label>
+                    <label for="toy" class="input__type">
+                        <input type='radio' id="toy" name="type" class="radio">
+                        <span class="radio-custom"></span>
+                        <span class="input__type-txt">Детская игрушка</span>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form__color">
+            <div class="form__wrapper form__type">
+                <legend class="form__title form__title--color">Цвет</legend>
+                <div class="form__label-wrapper form__label-wrapper--mod">
+                    <label for="white" class="label__color">
+                        <input type="checkbox" id="white" class="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label__color-text">Белый</span>
+                    </label>
+                    <label for="gray" class="label__color">
+                        <input type="checkbox" id="gray" class="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label__color-text">Серый</span>
+                    </label>
+                    <label for="tiffany" class="label__color">
+                        <input type="checkbox" id="tiffany" class="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label__color-text">«Тиффани»</span>
+                    </label>
+                    <label for="black" class="label__color">
+                        <input type="checkbox" id="black" class="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label__color-text">Чёрный</span>
+                    </label>
+                    <label for="pink" class="label__color">
+                        <input type="checkbox" id="pink" class="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label__color-text">Розовый</span>
+                    </label>
+                    <label for="orange" class="label__color">
+                        <input type="checkbox" id="orange" class="checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="label__color-text">Оранжевый</span>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form__name">
+            <div class="form__wrapper name__wrapper">
+                <legend class="form__title">ФИО</legend>
+                <div class="form__label-wrapper form__label-wrapper--fio">
+                    <label for="f-name" class="label__name">
+                        <span class="input__name-txt">Имя:</span>
+                        <input type="text" id="f-name" class="input__name" placeholder="Введите ваше имя*">
+                    </label>
+                    <label for="s-name" class="label__name">
+                        <span class="input__name-txt">Фамилия:</span>
+                        <input type="text" id="s-name" class="input__name" placeholder="Укажите фамилию*">
+                    </label>
+                    <label for="m-name" class="label__name">
+                        <span class="input__name-txt">Отчество:</span>
+                        <input type="text" id="m-name" class="input__name" placeholder="Отчество, если желаете">
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form__email">
+            <div class="form__wrapper form__wrapper--phone">
+                <legend class="form__title">Тел</legend>
+                <div class="label__wrapper">
+                    <label for="phone" class="label__phone">
+                        <input type="text" id="phone" class='input__phone input__name'
+                               placeholder="+7 XXX XX XX*" pattern="\+*[0-9]{1,11}" required>
+                        <svg class="form__icon-phone" width="40" height="40">
+                            <use x="0" y="0" xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="form__wrapper form__wrapper--email">
+                <legend class="form__title">E-mail</legend>
+                <div class="label__wrapper">
+                    <label for="email" class="label__email"><input type="text" id="email" class='input__email input__name' placeholder="Ваш E-mail*">
+                        <svg class="form__icon-email" width="40" height="40">
+                            <use x="0" y="0" xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form__comment">
+            <div class="form__wrapper wrapper__dop">
+                <legend class="form__title">доп</legend>
+                <div class="label__wrapper">
+                    <textarea class="input__textarea" name="comment" id="comment" cols="26" rows="10"
+                              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</section>
+<section class="prefooter">
+    <div class="wrapper form__wrapper prefooter__wrapper">
+        <a href="#" class="button prefooter__btn">Отправить заказ</a>
+        <p class="prefooter__txt"><sup>*</sup>Поля обязательны для заполнения</p>
+    </div>
+</section>
+<footer>
+    <div class="wrapper footer__wrapper">
+        <div class="inner-wrapper inner-footer">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <svg width="100" height="40" class="footer__logo--svg">
+                        <use xlink:href="img/sprite.svg#logo-footer"></use>
+                    </svg>
+                </a>
+
+            </div>
+            <div class="social">
+                <div class="social__item insta">
+                    <a href="#">
+                        <svg width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-insta"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social__item fb">
+                    <a href="#">
+                        <svg width="16" height="29">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="social__item twit">
+                    <a href="#">
+                        <svg width="25" height="25">
+                            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="developer">
+                <a class="developer" href="#"><p class="developer__txt">Разработчик</p>
+                    <svg width="30" height="35">
+                        <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
